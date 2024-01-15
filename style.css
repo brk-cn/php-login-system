@@ -37,7 +37,11 @@ input[type="password"] {
 }
 
 input {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
+}
+
+input:focus {
+  outline: none;
 }
 
 input::placeholder {
@@ -82,4 +86,11 @@ a {
 
 #sign-up-form {
   display: none;
+}
+
+.error {
+  height: 1.1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: red;
 }
