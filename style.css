@@ -9,6 +9,7 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ddd;
@@ -72,20 +73,17 @@ button:active {
   scale: 0.97;
 }
 
-p {
+p.align-right {
   text-align: right;
+}
+
+p.hi {
+  padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
 a {
   color: #f6b17a;
-}
-
-#login-form {
-  display: block;
-}
-
-#sign-up-form {
-  display: none;
 }
 
 .error {

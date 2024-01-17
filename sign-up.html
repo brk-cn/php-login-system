@@ -3,25 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="login-form">
-      <form action="login.php" method="post">
-        <input type="email" id="login-email" name="email" placeholder="email" required />
-        <div class="error"></div>
-        <input type="password" name="password" placeholder="password" required />
-        <div class="error"></div>
-        <label for="remember-me"><input type="checkbox" id="remember-me" name="remember-me" />Remember me</label>
-        <button type="submit">LOGIN</button>
-        <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign up</a></p>
-      </form>
-    </div>
-
     <div id="sign-up-form">
-      <form action="sign-up.php" method="post" onsubmit="return validateSignUpForm()">
+      <form action="sign-up.php" method="post">
         <input
           type="email"
           id="sign-up-email"
@@ -50,7 +38,7 @@
         />
         <div id="confirm-password-error" class="error"></div>
         <button id="sign-up-btn" type="submit">SIGN UP</button>
-        <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        <p class="align-right">Already have an account? <a href="/php-login-system/login.html">Login</a></p>
       </form>
     </div>
 

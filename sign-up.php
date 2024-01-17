@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (!$stmt->execute()) {
     echo $sql . "<br>" . $stmt->error;
   } else {
-    header("Location: index.html");
+    header("Location: /php-login-system/login.html");
   }
 
   $stmt->close();

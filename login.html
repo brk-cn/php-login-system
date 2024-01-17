@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="login-form">
+      <form action="login.php" method="post">
+        <input type="email" id="login-email" name="email" placeholder="email" required />
+        <div class="error"></div>
+        <input type="password" name="password" placeholder="password" required />
+        <div class="error"></div>
+        <label for="remember-me"><input type="checkbox" id="remember-me" name="remember-me" />Remember me</label>
+        <button type="submit">LOGIN</button>
+        <p>Don't have an account? <a href="/php-login-system/sign-up.html">Sign up</a></p>
+      </form>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
