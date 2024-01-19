@@ -16,7 +16,7 @@ if (!isset($_SESSION["email"])) {
 }
 echo "<p class='hi'>Hi, {$_SESSION['email']}</p>";
 ?>
-<a href="#">Log out</a>
+<a href="log-out.php">Log out</a>
 
 </body>
 

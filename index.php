@@ -10,13 +10,12 @@
 
 <?php
 session_start();
-
 if (isset($_COOKIE["remember-me"])) {
   $remember_me_email = $_COOKIE["remember-me"];
   if (isset($_SESSION["email"]) && $_SESSION["email"] == $remember_me_email) {
     echo "<p class='hi'>Hi, {$_SESSION['email']}.<p>";
     echo "<p>You are directed to the user page. Please wait.<p>";
-    header("refresh:5; url=user.php");
+    header("refresh:3; url=user.php");
     exit();
   }
 } else {
